@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: Arial, Helvetica, sans-serif;
+            list-style: none;
+            text-decoration: none;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-image: url(lightpink.png);
+            padding-top: 60px; 
+        }
+
+        
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+            color: white;
+            background-color: black;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: capitalize;
+            padding: 10px 15px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        
+        section {
+            padding: 80px 10%;
+        }
+
+        .homepage-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .homepage-item {
+            flex: 1;
+            max-width: 320px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .homepage-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .homepage-item img:hover {
+            transform: scale(1.05);
+        }
+
+        .homepage_vis h3 {
+            font-size: 28px;
+            color: black;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .homepage_vis p {
+            color: black;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 25px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        
+        @media screen and (max-width: 768px) {
+            .nav-links {
+                flex-direction: column; 
+                align-items: flex-end;
+                width: 100%;
+                padding: 10px 0;
+                gap: 10px;
+            }
+
+            .homepage-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .homepage-item {
+                max-width: 100%;
+                padding: 15px;
+            }
+        }
+
+        @media screen and (max-width: 430px) {
+            .homepage_vis h3 {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            .homepage-item img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"> 
+            <span>JJ</span> 
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="homepage" id="about-me">
+            <section>
+                <div class="homepage_vis">
+                    <h3>ABOUT ME</h3>
+                    <div class="homepage-container">
+                        <div class="homepage-item">
+                            <img src="profile.jpg" alt="A photo of John Joseph Israel">
+                            <h2>Me</h2>
+                            <p>
+                                Hi, I'm JOHN JOSEPH ISRAEL, 20 years old and a college student at Dalubhasaan ng Lungsod ng Lucena. I'm a talkative and approachable person, a little crazy at times, but once you get to know me, you'll realize I'm actually a good person.
+                            </p>
+                        </div>
+                        <div class="homepage-item">
+                            <img src="ball.jpg" alt="Basketball">
+                            <h2>My Hobbies</h2>
+                            <p>
+                                Basketball is one of my biggest hobbies because when I play it, I feel free and happy. It's also where I make a lot of friends. I may not be that good at it, but I’m happy.
+                            </p>
+                        </div>
+                        <div class="homepage-item">
+                                <img src="crush.jpg" alt="A picture of Park Hyesu">
+                            </a>
+                            <h2>My Crush</h2>
+                            <p>
+                                Her name is Park Hyesu, an actress from South Korea. I really admire her acting because she's incredibly talented, and I like her because she's so pretty, gorgeous, adorable, and cute.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+</body>
+</html>
